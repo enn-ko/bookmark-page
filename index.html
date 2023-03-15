@@ -17,7 +17,7 @@
         <header class="container">
           <div class="row">
             <div class="col-12">
-                  <nav class="navbar  navbar-expand-lg mt-4">
+                  <nav aria-labelledby="navbar" class="navbar navbar-expand-lg mt-4">
                     <div class="container-fluid">
                       <a class="navbar-brand" href="#">
                         <img src="./images/logo-bookmark.svg" class="logo" alt="bookmarks logo">
@@ -102,13 +102,13 @@
                    <div class="d-flex justify-content-center features-nav">
                     <ul class="p-0 d-flex align-items-center">
                       <li class="p-4 me-md-4 col-12 col-md-4" >
-                        <a aria-current="page" class="active" id="simple">Simple Bookmarking</a>
+                        <a class="active" id="simple">Simple Bookmarking</a>
                       </li>
                       <li class="p-4 mx-4 col-12 col-md-4"  >
-                        <a class="" aria-current="page" id="speedy">Speedy Searching</a>
+                        <a class="" id="speedy">Speedy Searching</a>
                       </li>
                       <li class="p-4 mx-4 col-12 col-md-4" >
-                        <a class="" aria-current="page" id="easy">Easy Sharing</a>
+                        <a class="" id="easy">Easy Sharing</a>
                       </li>
                     </ul>
                    </div>
@@ -190,8 +190,8 @@
                   <div class="my-4 py-3">
                     <img src="./images/logo-chrome.svg" alt="" aria-hidden="true">
                   </div>
-                  <h4>Add to Chrome</h4>
-                  <small>Minimum version 62</small>
+                  <h3>Add to Chrome</h3>
+                  <p>Minimum version 62</p>
                   <img class="py-4" src="./images/bg-dots.svg" alt="bg dots">
                   <button class="btn chrome px-3 py-2 mb-3">Add & Install Extension</button>
                 </div>
@@ -200,8 +200,8 @@
                   <div class="my-4 py-3">
                     <img src="./images/logo-firefox.svg" alt="" aria-hidden="true">
                   </div>
-                  <h4>Add to Firefox</h4>
-                  <small>Minimum version 55</small>
+                  <h3>Add to Firefox</h3>
+                  <p>Minimum version 55</p>
                   <img class="py-4" src="./images/bg-dots.svg" alt="bg dots">
                   <button class="btn chrome px-3 py-2 mb-3">Add & Install Extension</button>
                 </div>
@@ -210,8 +210,8 @@
                   <div class="my-4 py-3">
                     <img src="./images/logo-opera.svg" alt="" aria-hidden="true">
                   </div>
-                  <h4>Add to Opera</h4>
-                  <small>Minimum version 46</small>
+                  <h3>Add to Opera</h3>
+                  <p>Minimum version 46</p>
                   <img class="py-4" src="./images/bg-dots.svg" alt="bg dots">
                   <button class="btn chrome px-3 py-2 mb-3">Add & Install Extension</button>
                 </div>
@@ -263,6 +263,7 @@
                         placeholder="email address"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                         aria-describedby="error-message"
+                        aria-label="email"
                         autocomplete="email">
                         <div class="error-message d-none">
                           <img src="./images/icon-error.svg" class="error-icon " alt="" aria-hidden="true">
