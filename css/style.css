@@ -217,7 +217,7 @@ form{
 }
 .footer-logo{
     filter: hue-rotate(135deg) invert(1);
-    padding-bottom: 0.6rem;
+    padding-bottom: 0.25rem;
 }
 #footer .navbar-brand{
    -webkit-filter: invert(1);
