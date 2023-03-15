@@ -1,0 +1,319 @@
+@import "./bootstrap.min.css";
+@import "./fontawesome-free/css/all.css";
+
+:root{
+--Soft-Blue: hsl(231, 69%, 60%);
+--Soft-Red: hsl(0, 94%, 66%);
+
+--Grayish-Blue: hsl(229, 8%, 60%);
+--Very-Dark-Blue: hsl(229, 31%, 21%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    min-height: 100vh;
+    font-family: "Rubik" sans-serif;
+    line-height: 1.5;
+    font-size: 18px  !important;
+    width: 100%;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+ol,li{
+    list-style: none;
+}
+p,h1,h2,h3,h4,h5,h6{
+    overflow-wrap: break-word;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: inherit;
+}
+img,svg,picture,canvas,video{
+    max-inline-size: 100%;
+    block-size: auto;
+}
+input,button,textarea,select{
+    font: inherit;
+    border: none;
+}
+.sr-only{
+    clip: (1px 1px 1px 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+/* //navbar */
+
+.navbar-brand{
+    padding-bottom: 0.6rem;
+}
+.navbar-toggler:focus{
+    box-shadow:none !important;
+}
+.navbar-nav .nav-item{
+    padding: 0 1.5rem;
+}
+.navbar-nav .nav-link{
+    text-transform: uppercase;
+    color: var(--Very-Dark-Blue);
+    /* font-size: 18px; */
+}
+.navbar-nav li:nth-last-child(-n + 1){
+    border: 2px solid white;
+    background-color: var(--Soft-Red);
+    border-radius: 0.5rem;
+}
+.navbar-nav li:nth-last-child(-n + 1):hover{
+    border: 2px solid var(--Soft-Red);
+    background-color: white;
+}
+.navbar-nav li:nth-last-child(-n + 1):hover .nav-link{
+    color: var(--Soft-Red) !important;
+}
+.nav-link:hover, .faq-title:hover{
+    color: var(--Soft-Red) ;
+}
+
+/* home  */
+#home{
+    margin-top: 3rem;
+    position: relative;
+}
+p{
+    color: var(--Grayish-Blue);
+}
+.bg-img1{
+    width: calc(35vw + 50px);
+    height: 230px;
+    background-color: var(--Soft-Blue);
+    border-radius: 35% 0 0 35%;
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    z-index: -2;
+}
+.chrome{
+    color: white;
+    background-color: var(--Soft-Blue);
+    border: 2px solid var(--Soft-Blue);
+}
+.chrome:hover, .chrome:active{
+    color: var(--Soft-Blue) !important ;
+    background-color: white !important;
+    border: 2px solid var(--Soft-Blue) !important;
+}
+.firefox{
+    color: var(--Very-Dark-Blue);
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+    border: 2px solid white;
+}
+.firefox:hover{
+    color: var(--Grayish-Blue);
+    border: 2px solid var(--Very-Dark-Blue);
+}
+
+/* <-----features----> */
+#features{
+    margin-top: 3rem;
+    position: relative;
+}
+.active{
+    padding-bottom: 1.5rem;
+    width: 230px;
+    color: var(--Very-Dark-Blue) !important;
+    border-bottom: 4px solid var(--Soft-Red) !important;
+}
+.trans{
+    transition: 0.5s;
+}
+.feature{
+    width: calc(35vw + 100px);
+}
+#features ul{
+    border-bottom: 1px solid var(--Grayish-Blue);
+    color: var(--Grayish-Blue);
+}
+#features ul li:hover{
+    color: var(--Soft-Red);
+}
+.bg-img2{
+    width: calc(35vw + 50px);
+    height: 230px;
+    background-color: var(--Soft-Blue);
+    border-radius: 0 35% 35% 0;
+    position: absolute;
+    left: -5px;
+    top: 65%;
+    z-index: -2;
+}
+
+/* <------pricing------> */
+.mt-8{
+    margin-top: 6rem;
+}
+small{
+    color: var(--Grayish-Blue);
+}
+.FAQs p {
+    color: var(--Very-Dark-Blue) ;
+}
+.faq-icon{
+    transition: 0.5s;
+}
+.faq-icon.rotate{
+    transform: rotate(180deg);
+}
+.faq-body{
+    display: none;
+}
+/* <------contact-------> */
+#contact{
+    background-color: var(--Soft-Blue) !important;
+    color: white;
+}
+#contact p{
+    color: white !important;
+    letter-spacing: 5px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+form{
+    position: relative;
+}
+.error{
+    border: 2px solid var(--Soft-Red);
+}
+.error-icon{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+#contact .btn:hover{
+    background-color: white !important;
+    border: 2px solid var(--Soft-Red) !important;
+    color: var(--Soft-Red) !important;
+}
+
+/* <------footer----> */
+#footer{
+    background-color: var(--Very-Dark-Blue);
+}
+.footer-logo{
+    filter: hue-rotate(135deg) invert(1);
+}
+#footer .navbar-brand{
+   -webkit-filter: invert(1);
+   filter: invert(1);
+}
+#footer li, .social-icon img{
+    padding: 1rem;
+    color: white !important;
+}
+#footer li:hover{
+    color: var(--Soft-Red) !important;
+}
+
+@media screen and (min-width:991px) {
+    .home-content{
+        width: calc(30vw + 50px);
+    }
+    .error-icon{
+        right: 44%;
+    }
+    #footer li, .social-icon img{
+        padding: 0 1.5rem;
+        color: white !important;
+    }
+}
+@media screen and (max-width:991px) {
+    .navbar-brand, .navbar-toggler{
+        z-index: 5;
+    }
+    .navshow{
+        background-color: var(--Very-Dark-Blue);
+        opacity: 0.9;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        padding: 5rem;
+        height: 100vh;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        margin: 0 !important;
+    }
+    .navbar-nav li:nth-last-child(-n + 1){
+        margin-top: 2rem;
+        padding: 0.5rem !important;
+        border: 2px solid white;
+        background-color: var(--Very-Dark-Blue) !important;
+        color: white !important;
+    }
+    .navbar-nav ul{
+        border-top: 1px solid var(--Grayish-Blue);
+    }
+    .navbar-nav li{
+        padding: 1rem !important;
+        border-bottom: 1px solid var(--Grayish-Blue);
+    }
+    .nav-link{
+        color: white !important;
+        padding: 1rem !important;
+    }
+    .social-nav{
+        position: fixed;
+        bottom: 10px;
+        z-index: 100;
+        text-align: center;
+        margin: auto;
+        left: 0;
+        width: 100%;
+    }
+    .social-nav img{
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #home .row{
+        flex-direction: column-reverse;
+    }
+    .bg-img1{
+        top: 120px;
+    }
+    .home-left{
+        text-align: center;
+    }
+    /* <---features----> */
+    .features-nav{
+        flex-direction: column-reverse !important;
+    }
+    #features ul{
+        display: flex;
+        flex-direction: column !important;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    #features ul li{
+        border-bottom: 1px solid var(--Grayish-Blue);
+        color: var(--Grayish-Blue);
+    }
+}
