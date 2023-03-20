@@ -46,7 +46,7 @@ $("#easy").on("click",_=>{
   });
   $(window).on("scroll", function(){
     if($(".navbar-nav").hasClass("navshow")){
-        $(".navbar-nav").slideUp(500);
+        $(".navbar-collapse").removeClass("show");
         $("#nav-icon").attr('src','./images/icon-hamburger.svg');
         $(".social-nav").addClass('d-none');
         $(".logo").removeClass("footer-logo");
@@ -99,7 +99,6 @@ lists.map(list=>{
 })
 
 $(".faq-item").click(function(el){
-
     $(".faq-body").slideUp(500);
     $(".faq-icon").removeClass("rotate text-danger");
 
