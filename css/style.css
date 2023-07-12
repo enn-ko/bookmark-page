@@ -6,7 +6,7 @@
 --Soft-Red: hsl(0, 94%, 66%);
 
 --Grayish-Blue: hsl(229, 8%, 60%);
---Very-Dark-Blue: hsl(229, 31%, 21%);
+--Very-Dark-Blue: #252b46;
 }
 *{
     margin: 0;
@@ -123,7 +123,7 @@ p{
     color: var(--Very-Dark-Blue);
     background-color: white;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
-    border: 2px solid white;
+    border: 2px solid rgb(243, 243, 243);
 }
 .firefox:hover{
     color: var(--Grayish-Blue);
@@ -228,7 +228,15 @@ form{
 #footer li:hover{
     color: var(--Soft-Red) !important;
 }
-
+.delay1{
+    animation-delay: 1s;
+}
+.delay2{
+    animation-delay: 1.5s;
+}
+.delay3{
+    animation-delay: 2s;
+}
 @media screen and (min-width:991px) {
     .home-content{
         width: calc(30vw + 50px);

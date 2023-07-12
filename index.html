@@ -8,16 +8,19 @@
   
   <title>Bookmark landing page</title>
   <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="stylesheet" href="./css/animate.css">
 </head>
 <body>
-  
+  <div class=" loader w-100 min-vh-100 position-fixed d-flex bg-white justify-content-center align-items-center" style="z-index: 30;">
+    <img src="./images/Loader.svg"/>
+  </div>
    <main class="container-fluid m-0 p-0">
     <div class="row">
       <div class="col-12">
         <div class="container">
           <div class="row">
             <div class="col-12">
-                  <header id="navbar" class="navbar navbar-expand-lg mt-4">
+                  <header id="navbar" class="navbar navbar-expand-lg mt-4 wow fadeInDown delay1">
                     <div class="container-fluid">
                       <a class="navbar-brand" href="#">
                         <img src="./images/logo-bookmark.svg" class="logo" alt="bookmarks logo">
@@ -59,19 +62,19 @@
             <div class="container">
               <div class="row justify-content-between align-items-center">
                 <div class="col-12 col-md-6 home-left">
-                <div class="bg-img1"></div>
-                  <div class="home-content">
+                <div class="bg-img1 animated fadeIn delay3"></div>
+                  <div class="home-content overflow-hidden wow slideInLeft delay2">
                     <h1>A Simple Bookmark Manager</h1>
                     <p class="">
                       A clean and simple interface to organize your facourite websites. Open a new browser tab and see your sites load instantly. Try it for free.
                     </p>
                   </div>
 
-                    <a class="btn me-2 px-3 py-2 chrome" href="https://www.chrome.com">Get it on Chrome</a>
+                    <a class="btn me-2 px-3 py-2 chrome wow fadeInDown delay2" href="https://www.chrome.com">Get it on Chrome</a>
 
-                    <a class="btn px-3 py-2 firefox" href="https://www.firefox.com">Get it on Firefox</a>
+                    <a class="btn px-3 py-2 firefox wow fadeInDown delay2" href="https://www.firefox.com">Get it on Firefox</a>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 wow slideInRight delay3">
                   <img src="./images/illustration-hero.svg" aria-hidden="true" class="" alt="">
                 </div>
               </div>
@@ -86,7 +89,7 @@
               <div class="container">
                 <div class="row min-vh-100">
                   <div class="col-12">
-                   <div class="text-center m-auto feature">
+                   <div class="text-center m-auto feature wow fadeInDown delay3">
                     <h2>Features</h2>
                     <p >
                       Our aim is to make it quick and easy for 
@@ -110,13 +113,13 @@
                     </ul>
                    </div>
     
-                   <div class="bg-img2"></div>
+                   <div class="bg-img2 wow flipInX delay1"></div>
     
                    <div class="row justify-content-between align-items-center py-5 my-5 " id="Simple">
-                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0 wow slideInLeft delay1">
                       <img src="./images/illustration-features-tab-1.svg" alt="" aria-hidden="true">
                     </div>
-                    <div class="col-12 col-md-5">
+                    <div class="col-12 col-md-5 wow slideInRight delay2">
                       <h2>Bookmark in one click</h2>
                       <p>
                         Organize your bookmarks however you like. Our simple drag-and-drop 
@@ -129,7 +132,7 @@
                    </div>
     
                    <div class="row justify-content-between align-items-center py-5 my-5 d-none" id="bookmarks">
-                    <div class="col-12 col-md-6 mb-4 mb-md-0">
+                    <div class="col-12 col-md-6 mb-4 mb-md-0 ">
                       <img src="./images/illustration-features-tab-2.svg" aria-hidden="true" alt="">
                     </div>
                     <div class="col-12 col-md-5">
@@ -173,7 +176,7 @@
             <div class="container">
               <div class="row min-vh-100 justify-content-evenly align-items-center">
                 <div class="col-12">
-                  <div class="text-center m-auto feature">
+                  <div class="text-center m-auto feature wow fadeInUp delay1">
                     <h2>Download the extension</h2>
                     <p >
                       We’ve got more browsers in the pipeline.
@@ -183,7 +186,7 @@
                   </div>
                 </div>
     
-                <div class="col-10 col-md-5 col-lg-3 card shadow border-0 text-center">
+                <div class="col-10 col-md-5 col-lg-3 card shadow border-0 text-center wow slideInLeft delay3">
                   <div class="my-4 py-3">
                     <img src="./images/logo-chrome.svg" alt="" aria-hidden="true">
                   </div>
@@ -193,7 +196,7 @@
                   <button class="btn chrome px-3 py-2 mb-3">Add & Install Extension</button>
                 </div>
     
-                <div class="col-10 col-md-5 col-lg-3 card shadow border-0 text-center mt-5">
+                <div class="col-10 col-md-5 col-lg-3 card shadow border-0 text-center mt-5 wow slideInLeft delay2">
                   <div class="my-4 py-3">
                     <img src="./images/logo-firefox.svg" alt="" aria-hidden="true">
                   </div>
@@ -203,7 +206,7 @@
                   <button class="btn chrome px-3 py-2 mb-3">Add & Install Extension</button>
                 </div>
     
-                <div class="col-10 col-md-5 col-lg-3 card shadow border-0 text-center mt-8">
+                <div class="col-10 col-md-5 col-lg-3 card shadow border-0 text-center mt-8 wow slideInLeft delay1">
                   <div class="my-4 py-3">
                     <img src="./images/logo-opera.svg" alt="" aria-hidden="true">
                   </div>
@@ -214,7 +217,7 @@
                 </div>
     
                 <div class="col-12 m-5 d-flex flex-column justify-content-center align-items-center">
-                  <div class="text-center m-auto feature">
+                  <div class="text-center m-auto feature wow fadeInDown delay1">
                     <h2>Frequently Asked Questions</h2>
                     <p >
                       Here are some of our FAQs. If you have any other
@@ -222,11 +225,11 @@
                     </p>
                   </div>
     
-                  <div class="FAQs col-12 border-top col-md-8  m-5">
+                  <div class="FAQs col-12 border-top col-md-8  m-5 wow fadeIn delay1">
                     
                   </div>
     
-                  <button class="px-3 py-2 btn btn-primary">
+                  <button class="px-3 py-2 btn btn-primary wow fadeIn delay2">
                     More Info
                   </button>
                 </div>
@@ -240,7 +243,7 @@
           <div class="row">
             <div class="col-12">
               <div class="container">
-                <div class="my-5 py-3 row justify-content-center align-items-center">
+                <div class="my-5 py-3 row justify-content-center align-items-center wow fadeInDown delay3">
 
                   <div class="col-12 col-md-7 text-center">
                     <p>35,000 + already joined</p>
@@ -290,7 +293,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-12">
-                    <nav class="py-3 d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                    <nav class="py-3 d-flex flex-column flex-lg-row justify-content-between align-items-center wow fadeInRight delay3">
                      <div class="d-flex align-items-center flex-column flex-lg-row">
                       <a class="">
                         <img src="./images/logo-bookmark.svg" class="footer-logo" alt="" aria-hidden="true">
@@ -322,9 +325,10 @@
       </div>
     </div>
    </main>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
    <script src="./js/jquery.min.js" ></script>
    <script src="./js/bootstrap.min.js" ></script>
    <script src="./js/app.js" defer></script>
-
+   <script src="./js/wow.js"></script>
 </body>
 </html>

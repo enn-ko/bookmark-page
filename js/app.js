@@ -1,3 +1,10 @@
+ new WOW().init();
+ 
+$(window).on("load",()=>{
+    $(".loader").fadeOut(500,()=>{
+        $(".loader").addClass("d-none")
+    })
+})
 
 $("#simple").on("click",_=>{
     $("#Simple").removeClass("d-none");
