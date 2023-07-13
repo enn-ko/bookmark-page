@@ -134,6 +134,7 @@ p{
 #features{
     margin-top: 3rem;
     position: relative;
+    overflow: hidden;
 }
 .active{
     padding-bottom: 1.5rem;
@@ -240,6 +241,7 @@ form{
 @media screen and (min-width:991px) {
     .home-content{
         width: calc(30vw + 50px);
+        overflow: hidden;
     }
     .error-icon{
         right: 44%;
